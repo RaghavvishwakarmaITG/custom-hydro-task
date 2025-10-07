@@ -7,8 +7,9 @@
 .page-width {
     max-width: calc(1800px - 50px);
 }
+
 .main-padding {
-    padding: 5px 40px;
+    padding: 5px 50px;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
     --secondary-background: #ebe8e1;
     --secondary-text-color: #fff;
     --hover-color: #f26c4e;
-    --text-color: #000000;
+    --primary-text-color: #000000;
     --secondary-text-color: #f7f7f7;
     --primary-weight: 600;
     --secondary-weight: 900;
@@ -60,6 +61,22 @@ body {
 
 .main-background-color {
     background-color: var(--color-forgrade);
+}
+
+.text-color-primary {
+    color: var(--primary-text-color);
+}
+
+.text-color-secondary {
+    color: var(--secondary-text-color);
+}
+
+.teritory-text-color {
+    color: var(--color-forgrade);
+}
+
+.secondary-background {
+    background-color: var(--secondary-background);
 }
 
 .text-white {
@@ -107,12 +124,14 @@ body {
 .center {
     align-items: center;
     justify-content: center;
+    align-content: center;
 }
 
 .margin-zero {
     margin: 0;
 }
-.padding-zero{
+
+.padding-zero {
     padding: 0;
 }
 
@@ -124,16 +143,59 @@ body {
 .logo {
     height: 60px;
     width: 233px;
-}   
+}
+
 .navbar-list {
     gap: 35px;
 }
-.header-icons{
+
+.header-icons {
     gap: 20px;
 }
+
 .navbar {
     justify-content: space-between;
-}
-.header-context {
     width: 100%;
+}
+
+.header-context {
+    width: 98%;
+    padding: 5px 15px;
+}
+
+.heading {
+    font-size: 16px;
+}
+
+.underline {
+    text-decoration: underline #036147;
+}
+
+
+.banner-image {
+    max-width: 1720px;
+    width: 100%;
+    height: 800px;
+    padding: 0 15px 15px 0px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

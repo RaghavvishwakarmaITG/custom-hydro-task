@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rufina:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title> CUSTOM HYDRO</title>
 </head>
 
@@ -31,71 +32,79 @@
 
     <header>
 
-        <div class="header-background">
+        <div class="header-background secondary-background">
             <div class="page-width">
-                <div class="header-context">
-                    <div class="header-inner-context">
-                        <nav class="navbar flex center margin-zero main-padding">
-                        <div class="logo margin-zero ">
-                            <a href="#">
-                                <h1> <img src="./media/header-logo.png" alt="custom-hydro-nutrient" height="100%" width="100%"> </h1>
-                            </a>
-                        </div>
-                        <div class="navbar-inner-context flex center main-padding padding-zero margin-zero">
-                            <ul class="navbar-list flex center padding-zero">
-                                <li class=""> <a href="#"> Home </a></li>
-                                <li class="list-text flex center"> <a href="#"> Shop All </a>
-                                 <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" height="20px"
-                                        viewBox="0 -960 960 960" width="28px" fill="#000000">
-                                        <path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z" />
-                                    </svg>
-                                </li>
-                                <li> <a href="#"> Enviroment & Lighting </a></li>
-                                <li> <a href="#"> Hydroponics </a></li>
-                                <li> <a href="#"> Blog </a></li>
+                <div class="header-context margin-zero">
+                    <div class="header-inner-context ">
+                        <nav class="navbar flex center margin-zero">
+                            <div class="logo margin-zero ">
+                                <a href="#">
+                                    <h1> <img src="./media/header-logo.png" alt="custom-hydro-nutrient" height="100%"
+                                            width="100%"> </h1>
+                                </a>
+                            </div>
+                            <div class="navbar-inner-context flex center main-padding padding-zero margin-zero">
+                                <ul class="navbar-list flex center padding-zero">
+                                    <li class="list-text"> <a href="#" class="underline teritory-text-color"> Home </a>
+                                    </li>
+                                    <li class="list-text flex center"> <a href="#" class="text-color-primary"> Shop All
+                                        </a>
+                                        <svg class="down-arrow" xmlns="http://www.w3.org/2000/svg" height="20px"
+                                            viewBox="0 -960 960 960" width="28px" fill="#000000">
+                                            <path d="M480-333 240-573l51-51 189 189 189-189 51 51-240 240Z" />
+                                        </svg>
+                                    </li>
+                                    <li class="list-text"> <a href="#" class="text-color-primary"> Enviroment & Lighting
+                                        </a></li>
+                                    <li class="list-text"> <a href="#" class="text-color-primary"> Hydroponics </a></li>
+                                    <li class="list-text"> <a href="#" class="text-color-primary"> Blog </a></li>
 
-                            </ul>
-                        </div>
-                        <div class="header-icons flex center margin-zero">
-                            <div class="first-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
-                                    width="28px" height="28px"
-                                    color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
-                                    style="user-select: none; display: inline-block; fill: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(0, 0, 0)); color: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74)); flex-shrink: 0;">
-                                    <g color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
-                                        weight="light">
-                                        <path
-                                            d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z">
-                                        </path>
-                                    </g>
-                                </svg>
+                                </ul>
                             </div>
-                            <div class="second-icons">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
-                                    width="28px" height="28px"
-                                    color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
-                                    style="user-select: none; display: inline-block; fill: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(0, 0, 0)); color: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74)); flex-shrink: 0;">
-                                    <g color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
-                                        weight="light">
-                                        <path
-                                            d="M229.19,213c-15.81-27.32-40.63-46.49-69.47-54.62a70,70,0,1,0-63.44,0C67.44,166.5,42.62,185.67,26.81,213a6,6,0,1,0,10.38,6C56.4,185.81,90.34,166,128,166s71.6,19.81,90.81,53a6,6,0,1,0,10.38-6ZM70,96a58,58,0,1,1,58,58A58.07,58.07,0,0,1,70,96Z">
-                                        </path>
-                                    </g>
-                                </svg>
+                            <div class="header-icons flex center margin-zero">
+                                <div class="first-icon">
+                                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                            focusable="false" width="28px" height="28px"
+                                            color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
+                                            style="user-select: none; display: inline-block; fill: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(0, 0, 0)); color: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74)); flex-shrink: 0;">
+                                            <g color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
+                                                weight="light">
+                                                <path
+                                                    d="M228.24,219.76l-51.38-51.38a86.15,86.15,0,1,0-8.48,8.48l51.38,51.38a6,6,0,0,0,8.48-8.48ZM38,112a74,74,0,1,1,74,74A74.09,74.09,0,0,1,38,112Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="second-icons">
+                                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                            focusable="false" width="28px" height="28px"
+                                            color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
+                                            style="user-select: none; display: inline-block; fill: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(0, 0, 0)); color: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74)); flex-shrink: 0;">
+                                            <g color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
+                                                weight="light">
+                                                <path
+                                                    d="M229.19,213c-15.81-27.32-40.63-46.49-69.47-54.62a70,70,0,1,0-63.44,0C67.44,166.5,42.62,185.67,26.81,213a6,6,0,1,0,10.38,6C56.4,185.81,90.34,166,128,166s71.6,19.81,90.81,53a6,6,0,1,0,10.38-6ZM70,96a58,58,0,1,1,58,58A58.07,58.07,0,0,1,70,96Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="third-icon">
+                                    <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                            focusable="false" width="28px" height="28px"
+                                            color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
+                                            style="user-select: none; display: inline-block; fill: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(0, 0, 0)); color: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74)); flex-shrink: 0;">
+                                            <g color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
+                                                weight="light">
+                                                <path
+                                                    d="M216,66H174V64a46,46,0,0,0-92,0v2H40A14,14,0,0,0,26,80V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V80A14,14,0,0,0,216,66ZM94,64a34,34,0,0,1,68,0v2H94ZM218,200a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V80a2,2,0,0,1,2-2H82V96a6,6,0,0,0,12,0V78h68V96a6,6,0,0,0,12,0V78h42a2,2,0,0,1,2,2Z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </div>
                             </div>
-                            <div class="third-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false" width="28px" height="28px"
-                                    color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
-                                    style="user-select: none; display: inline-block; fill: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(0, 0, 0)); color: var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74)); flex-shrink: 0;">
-                                    <g color="var(--token-d1ef1660-ffac-4433-8943-6c5d2aec568d, rgb(28, 43, 74))"
-                                        weight="light">
-                                        <path
-                                            d="M216,66H174V64a46,46,0,0,0-92,0v2H40A14,14,0,0,0,26,80V200a14,14,0,0,0,14,14H216a14,14,0,0,0,14-14V80A14,14,0,0,0,216,66ZM94,64a34,34,0,0,1,68,0v2H94ZM218,200a2,2,0,0,1-2,2H40a2,2,0,0,1-2-2V80a2,2,0,0,1,2-2H82V96a6,6,0,0,0,12,0V78h68V96a6,6,0,0,0,12,0V78h42a2,2,0,0,1,2,2Z">
-                                        </path>
-                                    </g>
-                                </svg>
-                            </div>
-                        </div>
                         </nav>
                     </div>
                 </div>
@@ -104,6 +113,56 @@
 
     </header>
 
+    <section>
+
+        <div class="banner-background secondary-background">
+
+            <div class="page-width">
+
+                <div class="banner-image">
+
+                    <div class="swiper mySwiper">
+                        <div class="banner-swiper swiper-wrapper">
+                            <div class="banner-swiper-img swiper-slide">
+                                 <img src="./media/banner-seeds.jpg" alt=""
+                                    height="100%" width="100%"></div>
+                            <div class="banner-swiper-img swiper-slide"><img src="./media/banner-img.jpg" alt=""
+                                    height="100%" width="100%"></div>
+                            <div class="banner-swiper-img swiper-slide"> <img src="./media/banner-plant-img.jpg" alt=""
+                                    height="100%" width="100%"> </div>
+                        </div>
+                        <div class="swiper-button-next"> </div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            loop: true,
+            speed: 900,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
