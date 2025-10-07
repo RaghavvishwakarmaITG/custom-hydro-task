@@ -159,8 +159,14 @@ body {
 }
 
 .header-context {
-    width: 98%;
-    padding: 5px 15px;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.header-inner-context {
+    width: 97%;
+    display: flex;
+    justify-content: center;
 }
 
 .heading {
@@ -173,10 +179,9 @@ body {
 
 
 .banner-image {
-    max-width: 1720px;
-    width: 100%;
+    width: 96%;
     height: 800px;
-    padding: 0 15px 15px 0px;
+    padding: 0 0px 15px 0px;
 }
 
 .swiper {
