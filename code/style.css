@@ -155,7 +155,7 @@ body {
 
 .navbar {
     justify-content: space-between;
-    width: 100%;
+    width: 93%;
 }
 
 .header-context {
@@ -164,9 +164,7 @@ body {
 }
 
 .header-inner-context {
-    width: 97%;
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
 .heading {
@@ -179,7 +177,7 @@ body {
 
 
 .banner-image {
-    width: 96%;
+    width: 93%;
     height: 800px;
     padding: 0 0px 15px 0px;
 }
