@@ -1,0 +1,139 @@
+* {
+    list-style: none;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.page-width {
+    max-width: calc(1800px - 50px);
+}
+.main-padding {
+    padding: 5px 40px;
+}
+
+body {
+    font-family: 'DM sans', sans-serif;
+}
+
+:root {
+    --color-forgrade: #036147;
+    --color-background: #fff;
+    --secondary-background: #ebe8e1;
+    --secondary-text-color: #fff;
+    --hover-color: #f26c4e;
+    --text-color: #000000;
+    --secondary-text-color: #f7f7f7;
+    --primary-weight: 600;
+    --secondary-weight: 900;
+    --teritory-weigth: 400;
+    --quaternary-weight: 100;
+    --primary-font-size: 16px;
+    --secondary-font-size: 14px;
+    --teritory-font-size: 10px;
+    --secondary-font: 'Poppins', sans-serif;
+    --radius: 5px;
+
+}
+
+/* font styling */
+
+.second-font {
+    font-family: var(--secondary-font);
+}
+
+/* buton styling */
+
+.primary-button {
+    border-radius: var(--radius);
+}
+
+.scondary-button {
+    border-radius: var(--radius);
+}
+
+.teritory-button {
+    border-radius: var(--radius);
+}
+
+
+/* color  paletes  */
+
+.main-background-color {
+    background-color: var(--color-forgrade);
+}
+
+.text-white {
+    color: var(--secondary-text-color);
+}
+
+/* font weight  */
+
+.primary-font-weight {
+    font-weight: var(--primary-weight);
+}
+
+.secondary-font-weight {
+    font-weight: var(--secondary-weight);
+}
+
+.teritory-font-weight {
+    font-weight: var(--teritory-weigth);
+}
+
+.quaternary-weight {
+    font-weight: var(--quaternary-weight);
+}
+
+/* font size  */
+
+.small-font-size {
+    font-size: var(--teritory-font-size);
+}
+
+.medium-font-size {
+    font-size: var(--secondary-font-size);
+}
+
+.main-font-size {
+    font-size: var(--primary-font-size);
+}
+
+/* flex property */
+
+.flex {
+    display: flex;
+}
+
+.center {
+    align-items: center;
+    justify-content: center;
+}
+
+.margin-zero {
+    margin: 0;
+}
+.padding-zero{
+    padding: 0;
+}
+
+
+.announcement-bar-text {
+    line-height: 1.4rem;
+}
+
+.logo {
+    height: 60px;
+    width: 233px;
+}   
+.navbar-list {
+    gap: 35px;
+}
+.header-icons{
+    gap: 20px;
+}
+.navbar {
+    justify-content: space-between;
+}
+.header-context {
+    width: 100%;
+}
