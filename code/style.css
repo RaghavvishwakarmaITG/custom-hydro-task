@@ -1,19 +1,37 @@
 * {
-    list-style: none;
     margin: 0 auto;
-    text-decoration: none;
 }
 
 .page-width {
     max-width: calc(1800px - 50px);
+    padding: 0px 50px;
+    margin: 0 auto;
+
 }
 
-.main-padding {
-    padding: 5px 50px;
+.list-unset {
+    list-style: none;
+}
+
+.decoration-none {
+    text-decoration: none;
+}
+
+.sub-heading {
+    font-size: 35px;
+}
+
+.sub-heading-h3 {
+    font-size: 20px;
+}
+
+.sub-heading-h6 {
+    font-size: 16px;
 }
 
 body {
     font-family: 'DM sans', sans-serif;
+    font-size: 16px;
 }
 
 :root {
@@ -36,6 +54,20 @@ body {
 
 }
 
+.font-poppins {
+    font-family: var(--secondary-font);
+}
+
+.grid-col-4-desktop {
+    width: calc(25% - 15px);
+
+}
+
+.grid-col-7-desktop {
+    width: calc(14.2857% - 22px);
+
+}
+
 /* font styling */
 
 .second-font {
@@ -46,10 +78,25 @@ body {
 
 .primary-button {
     border-radius: var(--radius);
+    border: 1px solid #ffffff;
+    background-color: #ffffff4d;
+    padding: 14px 20px;
+    font-size: 14px;
 }
 
-.scondary-button {
+.primary-button:hover,
+.secondary-button:hover {
+    transition: all 0.3s ease-in-out;
+    background-color: var(--hover-color);
+    border: 1px solid var(--hover-color);
+}
+
+.secondary-button {
     border-radius: var(--radius);
+    border: 1px solid #036147;
+    background-color: #036147;
+    padding: 14px 20px;
+    font-size: 14px;
 }
 
 .teritory-button {
@@ -61,6 +108,10 @@ body {
 
 .main-background-color {
     background-color: var(--color-forgrade);
+}
+
+.main-text-color {
+    color: var(--color-forgrade);
 }
 
 .text-color-primary {
@@ -119,12 +170,14 @@ body {
 
 .flex {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .center {
     align-items: center;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
 .margin-zero {
@@ -137,7 +190,8 @@ body {
 
 
 .announcement-bar-text {
-    line-height: 1.4rem;
+    line-height: 1.6rem;
+    padding: 5px 0px;
 }
 
 .logo {
@@ -146,16 +200,16 @@ body {
 }
 
 .navbar-list {
-    gap: 35px;
+    gap: 34px;
 }
 
 .header-icons {
-    gap: 20px;
+    gap: 15px;
 }
 
 .navbar {
     justify-content: space-between;
-    width: 93%;
+    width: 100%;
 }
 
 .header-context {
@@ -177,8 +231,6 @@ body {
 
 
 .banner-image {
-    width: 93%;
-    height: 800px;
     padding: 0 0px 15px 0px;
 }
 
@@ -198,7 +250,176 @@ body {
 
 .swiper-slide img {
     display: block;
+    object-fit: cover;
+    aspect-ratio: 12.1/5.3;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    display: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    display: none;
+}
+
+.swiper-button-next::before,
+.swiper-button-prev::before {
+    display: none;
+}
+
+.swiper-btn-next,
+.swiper-btn-prev {
+    background-color: #ffffff4d;
+    color: #ebe8e1;
+    font-size: 35px;
+    border-radius: 99px;
+}
+
+
+i.fa.fa-angle-left,
+i.fa.fa-angle-right {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+    align-items: center;
+}
+
+.banner-swiper-img {
+    position: relative;
+}
+
+.explorer {
+    position: absolute;
+    flex-direction: column;
+    gap: 25px;
+    bottom: 7%;
+    left: 2%;
+}
+
+.list-category {
+    padding: 100px 0px;
+}
+
+.img-category {
     width: 100%;
     height: 100%;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 5px solid #ededed;
+    aspect-ratio: 1/1;
+}
+
+.img-category img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
     object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.img-category img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.list-text {
+    gap: 15px;
+}
+
+.rich-text,
+.rich-text-context {
+    padding: 70px 0px;
+    line-height: 1.8rem;
+}
+
+.rich-text-context,
+.rich-text-heading {
+    padding: 20px 0px 0px 0px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rich-text-info {
+    width: 900px;
+}
+
+.image-rating img {
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+}
+
+.rating-img {
+    border-radius: var(--radius);
+    padding: 5px;
+}
+
+.image-relative {
+    position: relative;
+}
+
+.image-info {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.links {
+    flex-direction: column;
+    gap: 25px;
+}
+
+.social-media {
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.links-with-payments {
+    padding-top: 100px;
+}
+
+.payments-option {
+    padding: 80px 0px 30px 0px;
+}
+
+.payment-icon {
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.payment-icon-img {
+    gap: 10px;
+}
+
+.multi-links-icon {
+    flex-direction: column;
+    gap: 13px;
 }
