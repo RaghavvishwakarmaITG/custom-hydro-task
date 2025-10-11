@@ -69,8 +69,8 @@ a {
 }
 
 .grid-col-4-desktop {
-    width: calc(25% - 22px);
-    max-width: calc(25% - 22px);
+    width: calc(25% - 25px);
+    max-width: calc(25% - 25px);
 }
 
 .grid-col-7-desktop {
@@ -82,10 +82,12 @@ a {
     width: calc(33.3333% - 10px);
     max-width: calc(33.3333% - 10px);
 }
+
 .grid-col-3-desktop-second {
     width: calc(33% - 15px);
     max-width: calc(33% - 15px);
 }
+
 .grid-col-2-desktop {
     width: calc(47% - 0px);
     max-width: calc(47% - 0px);
@@ -541,6 +543,7 @@ i.fa.fa-angle-right {
     background-color: #ffff;
     border-radius: 10px;
 }
+
 .marque-img img {
     height: 100%;
     width: 100%;
@@ -639,11 +642,12 @@ i.fa.fa-angle-right {
 
 .image-with-txt-inner {
     align-items: center;
-}   
+}
 
 .image-with-txt-context {
     padding: 50px 30px 70px 50px;
 }
+
 .collection-list-head {
     justify-content: space-between;
 }
@@ -668,6 +672,7 @@ i.fa.fa-angle-right {
     overflow: hidden;
     padding: 15px 10px;
 }
+
 .main-image img {
     border-radius: 15px;
 }
@@ -703,21 +708,26 @@ i.fa.fa-angle-right {
     position: sticky;
     top: 0;
 }
+
 .scrolling-list-wrapper {
     padding: 50px 0 70px 0;
 }
-.scrolling-list-inner , .list-collection-wrapper , .list-context-main {
-    padding: 0 0 50px 0;
+
+.scrolling-list-inner,
+.list-collection-wrapper,
+.list-context-main {
+    padding: 0 0 45px 0;
 }
 
-.scroll-marquee-list li{
-width: 25%;
+.scroll-marquee-list li {
+    width: 25%;
 }
 
-.text-heading{
+.text-heading {
     align-items: center;
     gap: 10px;
 }
+
 .para-cont {
     width: 90%;
 }
@@ -726,10 +736,12 @@ width: 25%;
     display: grid;
     grid-template-columns: 45% 55%;
 }
+
 .collection-list-image img {
     border-radius: 10px;
     aspect-ratio: 4.5/5;
 }
+
 .list-context-grid {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -737,26 +749,35 @@ width: 25%;
 }
 
 .third-marquee-scrolling-wrapper {
-    padding: 50px 0;
+    padding-bottom: 50px;
+}
+
+.third-marquee-inner:hover .third-marquee-list , .scrolling-review-blog:hover {
+    animation-play-state: paused;
 }
 
 .third-marquee-list {
-  display: flex;
-  overflow: hidden;
-  white-space: nowrap;
-  animation: marquee 20s linear infinite;
-  gap: 30px;
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee 190s linear infinite;
+    gap: 70px;
+}
+
+.third-marquee-inner {
+    display: flex;
+    overflow: hidden;
 }
 
 .third-marquee-img-main {
+    flex-wrap: nowrap;
     gap: 15px;
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .third-marquee-img {
     aspect-ratio: 6.5/4.5;
     background: none;
-    width: 70px;
+    width: 100px;
 }
 
 .third-marquee-img img {
@@ -765,13 +786,125 @@ width: 25%;
 
 
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
+.brand-details {
+    padding: 60px 10%;
+}
+
+.brand-details-heading-text {
+    gap: 30px;
+    width: 59%;
+}
+
+.detailed-context {
+    flex-direction: column;
+    gap: 10px;
+}
+
+details {
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: background 0.3s ease;
+}
+
+summary {
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+.icon {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+details p {
+    padding: 0 18px 14px;
+    line-height: 1.5;
+}
+
+.review-blog-wrapper {
+    padding: 90px 25px;
+}
+
+.review-blog {
+    flex-direction: column;
+    gap: 60px;
+    overflow: hidden;
+}
+
+.scrolling-review-context {
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 10px;
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+}
+
+.scrolling-review-blog {
+    gap: 15px;
+    animation: blog-scrolling 45s linear infinite;
+    flex-wrap: nowrap;
+}
+
+@keyframes blog-scrolling {
+    0% {
+        transform: translateX(0%);
+    }
+
+    50% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.details-para {
+    text-align: -webkit-left;
+}
+
+.review-context {
+    line-height: 1.9;
+    width: 385px;
+}
+.border-red {
+    border-bottom: 1px solid var(--hover-color);
+    display: block;
+    width: 383px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
