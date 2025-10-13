@@ -112,8 +112,9 @@ a {
 .teritory-button {
     border-radius: var(--radius);
     background-color: var(--hover-color);
-    padding: 15px 20px;
+    padding: 14px 20px;
     font-size: 14px;
+    border: none;
 }
                     /* color  paletes  */
 .main-background-color {
